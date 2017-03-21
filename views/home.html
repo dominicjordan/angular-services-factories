@@ -1,0 +1,14 @@
+<h1>{{heading}} [{{loggedIn?"INGELOGD":"UITGELOGD"}}]</h1>
+
+<p>
+    Een Single Page Application (SPA), ook wel een Single Page Interface (SPI) genoemd, is een webapplicatie of website die past op een enkele webpagina met het doel een vlotte gebruikerservaring te bieden, die te vergelijken is met een computerprogramma dat op de computer van de gebruiker zelf draait.
+</p>
+
+<form style="border:1px solid black;" ng-submit="login()" ng-hide="loggedIn" >
+    Username: <input type="text" ng-model="user.username" />
+    Password: <input type="text" ng-model="user.password" />
+    <input type="submit" value="Login" />
+</form>
+
+<img ng-repeat="image in images" src="{{image}}" />
+
